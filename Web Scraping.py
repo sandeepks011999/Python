@@ -6,6 +6,6 @@ soup = BeautifulSoup(data,"html.parser")
 for link in soup.find_all('a',href=True):
 
     print(link.get('href'))
-for link in soup.find_all('img'):# in html image is represented by the tag <img>
+for link in soup.find_all('img'):
     print(link)
     print(link.get('src'))
